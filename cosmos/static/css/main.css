@@ -1,0 +1,84 @@
+.my-header {
+  height: 90px;
+  background-color: #0A121E;
+}
+/* Шапка */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 150px;
+gap: 30px;
+
+width: 1440px;
+height: 90px;
+
+/* Чёрный */
+background: #0A121E;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+.my-but {
+    background-color: #FF342B !important;
+    border-radius: 4px !important;
+    width: 88px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+
+.space-img {
+    max-width: 457px;
+    max-height: 457px;
+}
+
+
+.footer {
+    background-color: #3C3C3C;
+
+}
+
+.for-img {
+    max-width: 520px !important;
+    max-height: 320px !important;
+}
+
+.slider-for {
+    max-width: 520px !important;
+    max-height: 320px !important;
+}
+
+
+.slider-nav img {
+    display: block;
+    max-width: 240px;
+    margin-right: 20px;
+
+}
+
+.slick-slide img {
+    height: 320px;
+    width: 520px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .slider-nav img {
+        margin-right: 10px;
+        max-width: 124px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider-nav img {
+        margin-right: 5px;
+        max-width: 100px;
+    }
+}
