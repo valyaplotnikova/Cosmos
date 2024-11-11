@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
   <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+
   <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
@@ -117,32 +118,31 @@
 <footer class="footer">
   <div class="container-lg py-5" id="photo">
     <h1 class="fs-2 text-center mb-5" style="color: white">Фотографии</h1>
+
     <div class="slider">
       <div class="slider-for">
-        {% for image in images %}
-
-        <div class="slide">
-
+      {% for image in images %}
+        <div>
           <a href="{{ image.image.url }}" data-fancybox="gallery">
             <img src="{{ image.image.url }}">
           </a>
 
         </div>
-        {% endfor %}
+{% endfor %}
       </div>
+       <div class="slider">
       <div class="slider-nav">
-        {% for image in images %}
-
-        <div class="slide">
-          <div class="slide-img-wr">
-            <div class="slide-img"
-                 style="background-image: url({{ image.url }})"></div>
-          </div>
-        </div>
-        {% endfor %}
+            <div><img src="{% static 'img/Picture2.png' %}"></div>
+            <div><img src="{% static 'img/Picture1.png' %}"></div>
+            <div><img src="{% static 'img/Picture3.png' %}"></div>
+            <div><img src="{% static 'img/Picture4.png' %}"></div>
+            <div><img src="{% static 'img/Picture5.png' %}"></div>
       </div>
+      </div>
+
     </div>
   </div>
+
 </footer>
 
 

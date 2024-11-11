@@ -53,12 +53,14 @@ flex-grow: 0;
 .slider-for {
     max-width: 520px !important;
     max-height: 320px !important;
+
 }
 
 
 .slider-nav img {
     display: block;
-    max-width: 240px;
+    max-width: 165px;
+    max-height: 165px;
     margin-right: 20px;
 
 }
@@ -72,7 +74,8 @@ flex-grow: 0;
 @media screen and (max-width: 1000px) {
     .slider-nav img {
         margin-right: 10px;
-        max-width: 124px;
+        max-width: 165px;
+        max-height: 165px;
     }
 }
 

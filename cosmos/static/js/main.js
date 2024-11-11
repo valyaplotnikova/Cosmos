@@ -19,10 +19,10 @@ $(document).ready(function(){
 
     });
     $('.slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: true,
+        dots: false,
         centerMode: true,
         focusOnSelect: true,
         variableWidth: true,
