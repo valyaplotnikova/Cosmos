@@ -43,27 +43,37 @@ flex-grow: 0;
 .footer {
     background-color: #3C3C3C;
 
+
 }
 
 .for-img {
     max-width: 520px !important;
     max-height: 320px !important;
+
+}
+
+#my_slider {
+    margin: 20px 20px 20px 400px;
+    padding: 0px 10px 10px 10px;
+
+
+
 }
 
 .slider-for {
     max-width: 520px !important;
     max-height: 320px !important;
 
+
 }
 
 
 .slider-nav img {
-    display: block;
     max-width: 165px;
     max-height: 165px;
     margin-right: 20px;
 
-}
+ }
 
 .slick-slide img {
     height: 320px;
@@ -85,3 +95,8 @@ flex-grow: 0;
         max-width: 100px;
     }
 }
+
+.round {
+    border-radius: 40px;
+   }
+

@@ -17,15 +17,17 @@ $(document).ready(function(){
         fade: true,
         asNavFor: '.slider-nav',
 
+
     });
     $('.slider-nav').slick({
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: false,
+        dots: true,
         centerMode: true,
         focusOnSelect: true,
         variableWidth: true,
+
         responsive: [
             {
               breakpoint: 1000,
@@ -35,5 +37,6 @@ $(document).ready(function(){
             }
         ]
     });
+
 
 });
