@@ -13,6 +13,7 @@
           crossorigin="anonymous"
   />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
   <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
 
@@ -103,25 +104,27 @@
           <div class="slider-for" id="my_slider">
             {% for image in images %}
             <div>
-              <a href="{{ image.image.url }}" data-fancybox="gallery">
-                <img src="{{ image.image.url }}" class="round">
+
+              <a href="{{ image.image.url }}" class="image-link"  data-mfp-src="{{ image.image.url }}">
+                <img src="{{ image.image.url }}" class="round" alt="">
               </a>
 
             </div>
             {% endfor %}
           </div>
-          <div class="slider">
+
             <div class="slider-nav">
-              <div><img src="{% static 'img/Picture1.png' %}"></div>
-              <div><img src="{% static 'img/Picture3.png' %}"></div>
-              <div><img src="{% static 'img/Picture4.png' %}"></div>
-              <div><img src="{% static 'img/Picture5.png' %}"></div>
+              <div><img src="{% static 'img/Picture1.png' %}" alt=""></div>
+              <div><img src="{% static 'img/Picture2.png' %}" alt=""></div>
+              <div><img src="{% static 'img/Picture3.png' %}" alt=""></div>
+              <div><img src="{% static 'img/Picture4.png' %}" alt=""></div>
+              <div><img src="{% static 'img/Picture5.png' %}" alt=""></div>
+              <div class="prev"></div>
+              <div class="next"></div>
             </div>
-          </div>
 
         </div>
       </div>
-
     </footer>
 
 
@@ -133,6 +136,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="{% static 'slick/slick.min.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="{% static 'js/main.js' %}"></script>
