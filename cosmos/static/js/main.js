@@ -12,7 +12,9 @@ $(document).ready(function() {
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: false,
-//        centerMode: true,
+        infinity: true,
+        centerMode: true,
+
         focusOnSelect: true,
         arrows: true,
         prevArrow: '<div class="prev"></div>',
